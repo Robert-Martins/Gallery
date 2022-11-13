@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #edeced;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 72px;
+}
+
+h2 {
+    font-size: 43px;
+    font-weight: 500;
+    line-height: 58px;
+}
+
+h6 {
+    font-size: 14px;
+    font-weight: 200;
+    opacity: 0.8;
+}
+
+header {
+    width: 100%;
+    height: 72px;
+    padding: 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+header ul {
+    width: 440px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;   
+}
+
+header ul li button {
+    background-color: inherit;
+    border: 0;
+    font-size: 18px;
+    color: white;
+}
+
+header ul li button:hover {
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    margin-top: 72px;
+    display: flex;
+}
+
+main div.callout-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 108px;
+    text-align: center;
+}
+
+main div.callout-container h2 {
+    margin-bottom: 20px;
+}
+
+main div.img-container img {
+    width: 750px;
+    height: 550px;
+}
+
+section.about {
+    width: 100%;
+    margin: 54px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.about h1{
+    text-align: center;
+}
+
+section.about div.slider-toggle-container {
+    width: 360px;
+    display: flex;
+    margin-top: 20px;
+    border: 1px solid black;
+    justify-content: space-between;
+    align-self: center;
+}
+
+section.about div.slider-toggle-container button {
+    padding: 12px 31px;
+    background-color: white;
+    border: 0
+}
+
+section.about div.slider-toggle-container button:hover {
+    cursor: pointer;
+}
+
+footer {
+    
+}
