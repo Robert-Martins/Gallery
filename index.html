@@ -12,9 +12,12 @@
     </head>
     <body>
         <header>
-            <h4>
-               Mercado Municipal de Campinas 
-            </h4>
+            <div>
+                <img src="./assets/icons/camera.png" />
+                <h4>
+                    Mercado Municipal de Campinas 
+                 </h4>
+            </div>
             <ul>
                 <li><button id="home">Home</button></li>
                 <li><button id="history">História</button></li>
@@ -24,11 +27,15 @@
         <main>
             <div class="callout-container">
                 <h2>
-                    UM OLHAR SOBRE O MERCADO MUNICIPAL DE CAMPINAS
+                    HISTÓRIAS E MEMÓRIAS DO MERCADO MUNICIPAL DE CAMPINAS
                 </h2>
                 <h6>
                     Fotojornalismo do Mercado Municipal
                 </h6>
+                <div>
+                    <img src="./assets/icons/photo-camera.png" />
+                </div>
+                <span></span>
             </div>
             <div class="img-container">
                 <img src="./assets/image_6487327.JPG" />
@@ -39,9 +46,9 @@
                 O Mercado Municipal de Campinas
             </h1>
             <div class="slider-toggle-container">
-                <button>História</button></li>
-                <button>Construção</button>
-                <button>Reforma</button>
+                <button class="selected" id="history">História</button>
+                <button id="construction">Construção</button>
+                <button id="reform">Reforma</button>
             </div>
             <div class="slider-container">
                 <div class="slider-exhibition-container">
@@ -50,7 +57,7 @@
                             <h3>
                                 História
                             </h3>
-                            <h5>
+                            <h6>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                 Sed venenatis malesuada nibh, non posuere nisl sollicitudin vitae. 
                                 Pellentesque auctor est vitae lorem consequat viverra sit amet vel dolor. 
@@ -58,14 +65,80 @@
                                 Pellentesque maximus sem erat, vel placerat leo accumsan a. 
                                 Etiam enim ipsum, tincidunt a arcu in, aliquet varius neque. 
                                 Cras at eros nec justo malesuada euismod
-                            </h5>
+                            </h6>
                         </div>
                         <div class="exhibition-img-container">
-                            <div class="exhibition-img"></div>
+                            <div class="exhibition-image-slider" id="history">
+                                <div class="exhibition-img history-one"></div>
+                                <div class="exhibition-img history-two"></div>
+                                <div class="exhibition-img history-three"></div>
+                            </div>
+                            <div class="bullet-container">
+                                <span class="selected"></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-exhibition">
+                        <div class="exhibition-content">
+                            <h3>
+                                Construção
+                            </h3>
+                            <h6>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Sed venenatis malesuada nibh, non posuere nisl sollicitudin vitae. 
+                                Pellentesque auctor est vitae lorem consequat viverra sit amet vel dolor. 
+                                Mauris placerat posuere nisl quis egestas. Proin nec dignissim nulla. 
+                                Pellentesque maximus sem erat, vel placerat leo accumsan a. 
+                                Etiam enim ipsum, tincidunt a arcu in, aliquet varius neque. 
+                                Cras at eros nec justo malesuada euismod
+                            </h6>
+                        </div>
+                        <div class="exhibition-img-container">
+                            <div class="exhibition-image-slider" id="construction">
+                                <div class="exhibition-img construction-one"></div>
+                                <div class="exhibition-img construction-two"></div>
+                                <div class="exhibition-img construction-three"></div>
+                            </div>
+                            <div class="bullet-container">
+                                <span class="selected"></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-exhibition">
+                        <div class="exhibition-content">
+                            <h3>
+                                Reforma
+                            </h3>
+                            <h6>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Sed venenatis malesuada nibh, non posuere nisl sollicitudin vitae. 
+                                Pellentesque auctor est vitae lorem consequat viverra sit amet vel dolor. 
+                                Mauris placerat posuere nisl quis egestas. Proin nec dignissim nulla. 
+                                Pellentesque maximus sem erat, vel placerat leo accumsan a. 
+                                Etiam enim ipsum, tincidunt a arcu in, aliquet varius neque. 
+                                Cras at eros nec justo malesuada euismod
+                            </h6>
+                        </div>
+                        <div class="exhibition-img-container">
+                            <div class="exhibition-image-slider" id="reform">
+                                <div class="exhibition-img reform-one"></div>
+                                <div class="exhibition-img reform-two"></div>
+                                <div class="exhibition-img reform-three"></div>
+                            </div>
+                            <div class="bullet-container">
+                                <span class="selected"></span>
+                                <span></span>
+                                <span></span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="site-decoration"></div>
         </section>
         <section class="commercies" id="commercies">
             <h1>
@@ -73,35 +146,82 @@
             </h1>
             <div class="commercies-container">
                 <div class="commercies-list">
-                    <div class="commerce-option">
-                        <img src="./assets/image_6487327.JPG" />
-                        <h4>Jesus Christ</h4>
+                    <div class="commerce-option selected" id="restaurant">
+                        <img src="./assets/icons/restaurant.png" />
+                        <h4>Restaurante do Jesus</h4>
                     </div>
-                    <div class="commerce-option">
-                        <img src="./assets/image_6487327.JPG" />
-                        <h4>Jesus Christ</h4>
+                    <div class="commerce-option" id="food">
+                        <img src="./assets/icons/food.png" />
+                        <div>
+                            <h4>Inácio's</h4>
+                            <h6>Lanchonete e Restaurante</h6>
+                        </div>
                     </div>
-                    <div class="commerce-option">
-                        <img src="./assets/image_6487327.JPG" />
-                        <h4>Jesus Christ</h4>
+                    <div class="commerce-option" id="shoes">
+                        <img src="./assets/icons/shoes.png" />
+                        <div>
+                            <h4>Roma</h4>
+                            <h6>Calçados</h6>
+                        </div>
                     </div>
-                    <div class="commerce-option">
-                        <img src="./assets/image_6487327.JPG" />
-                        <h4>Jesus Christ</h4>
+                    <div class="commerce-option" id="boutique">
+                        <img src="./assets/icons/boutique.png" />
+                        <div>
+                            <h4>Tabacaria Campinas</h4>
+                            <h6>Presentes & Presentes</h6>
+                        </div>
                     </div>
                 </div>
                 <div class="commerce-view">
-                    <img src="./assets/image_6487327.JPG" />
-                    <h5>Jesus Christ</h5>
-                    <h6>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Sed venenatis malesuada nibh, non posuere nisl sollicitudin vitae.
-                    </h6>
-                    <button>
-                        Ver Mais
-                    </button>
+                    <div class="commerce-inner-view">
+                        <div class="commerce-option-view">
+                            <img src="./assets/image_6487327.JPG" />
+                            <h5>Restaurante do Jesus</h5>
+                            <h6>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Sed venenatis malesuada nibh, non posuere nisl sollicitudin vitae.
+                            </h6>
+                            <button id="boutique">
+                                Ver Mais
+                            </button>
+                        </div>
+                        <div class="commerce-option-view">
+                            <img src="./assets/image_6487327.JPG" />
+                            <h5>Inácio's</h5>
+                            <h6>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Sed venenatis malesuada nibh, non posuere nisl sollicitudin vitae.
+                            </h6>
+                            <button id="food">
+                                Ver Mais
+                            </button>
+                        </div>
+                        <div class="commerce-option-view">
+                            <img src="./assets/image_6487327.JPG" />
+                            <h5>Roma</h5>
+                            <h6>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Sed venenatis malesuada nibh, non posuere nisl sollicitudin vitae.
+                            </h6>
+                            <button id="shoes">
+                                Ver Mais
+                            </button>
+                        </div>
+                        <div class="commerce-option-view">
+                            <img src="./assets/image_6487327.JPG" />
+                            <h5>Tabacaria Campinas</h5>
+                            <h6>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Sed venenatis malesuada nibh, non posuere nisl sollicitudin vitae.
+                            </h6>
+                            <button id="boutique">
+                                Ver Mais
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="site-decoration"></div>
         </section>
         <footer>
             <div class="top">
@@ -145,10 +265,52 @@
                     Este site foi desenvolvido com o propósito exclusivo de apresentar o mercado no modelo de fotojornalismo.
                 </h5>
                 <h6>
+                    Fotos e conteúdo por Vitória Hully
+                </h6>
+                <h6>
                     Desenvolvido por <a href="https://github.com/Robert-Martins">Robert Martins</a>
                 </h6>
             </div>
         </footer>
+        <div class="modal">
+            <div class="modal-body">
+                <div>
+                    <nav class="history-list"/>
+                        <img src="./assets/image_6487327.JPG"/>
+                        <img src="./assets/image_6487327.JPG"/>
+                        <img src="./assets/image_6487327.JPG"/>
+                    </nav>
+                    <nav class="construction-list">
+                        
+                    </nav>
+                    <nav class="reform-list">
+
+                    </nav>
+                    <nav class="restaurant-list">
+
+                    </nav>
+                    <nav class="food-list">
+
+                    </nav>
+                    <nav class="shoes-list">
+
+                    </nav>
+                    <nav class="boutique-list">
+
+                    </nav>
+                    <article>
+                        <div class="modal-img">
+                            <img src="./assets/image_6487327.JPG"/>
+                            <h5>História do Mercado</h5>
+                            <h6></h6>
+                        </div>
+                    </article>
+                </div>
+                <button>
+                    Voltar p/ o site
+                </button>
+            </div>
+        </div>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="js/functions.js"></script>
     </body>
