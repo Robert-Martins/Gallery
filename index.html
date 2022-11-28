@@ -47,7 +47,6 @@
             </h1>
             <div class="slider-toggle-container">
                 <button class="selected" id="history">História</button>
-                <button id="construction">Construção</button>
                 <button id="reform">Reforma</button>
             </div>
             <div class="slider-container">
@@ -69,37 +68,9 @@
                         </div>
                         <div class="exhibition-img-container">
                             <div class="exhibition-image-slider" id="history">
-                                <div class="exhibition-img history-one"></div>
-                                <div class="exhibition-img history-two"></div>
-                                <div class="exhibition-img history-three"></div>
-                            </div>
-                            <div class="bullet-container">
-                                <span class="selected"></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-exhibition">
-                        <div class="exhibition-content">
-                            <h3>
-                                Construção
-                            </h3>
-                            <h6>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Sed venenatis malesuada nibh, non posuere nisl sollicitudin vitae. 
-                                Pellentesque auctor est vitae lorem consequat viverra sit amet vel dolor. 
-                                Mauris placerat posuere nisl quis egestas. Proin nec dignissim nulla. 
-                                Pellentesque maximus sem erat, vel placerat leo accumsan a. 
-                                Etiam enim ipsum, tincidunt a arcu in, aliquet varius neque. 
-                                Cras at eros nec justo malesuada euismod
-                            </h6>
-                        </div>
-                        <div class="exhibition-img-container">
-                            <div class="exhibition-image-slider" id="construction">
-                                <div class="exhibition-img construction-one"></div>
-                                <div class="exhibition-img construction-two"></div>
-                                <div class="exhibition-img construction-three"></div>
+                                <div class="exhibition-img history-1"></div>
+                                <div class="exhibition-img history-2"></div>
+                                <div class="exhibition-img history-3"></div>
                             </div>
                             <div class="bullet-container">
                                 <span class="selected"></span>
@@ -125,9 +96,9 @@
                         </div>
                         <div class="exhibition-img-container">
                             <div class="exhibition-image-slider" id="reform">
-                                <div class="exhibition-img reform-one"></div>
-                                <div class="exhibition-img reform-two"></div>
-                                <div class="exhibition-img reform-three"></div>
+                                <div class="exhibition-img reform-1"></div>
+                                <div class="exhibition-img reform-2"></div>
+                                <div class="exhibition-img reform-3"></div>
                             </div>
                             <div class="bullet-container">
                                 <span class="selected"></span>
@@ -175,18 +146,18 @@
                 <div class="commerce-view">
                     <div class="commerce-inner-view">
                         <div class="commerce-option-view">
-                            <img src="./assets/image_6487327.JPG" />
+                            <img src="./assets/rooms/restaurant/1.jpg" />
                             <h5>Restaurante do Jesus</h5>
                             <h6>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                 Sed venenatis malesuada nibh, non posuere nisl sollicitudin vitae.
                             </h6>
-                            <button id="boutique">
+                            <button id="restaurant">
                                 Ver Mais
                             </button>
                         </div>
                         <div class="commerce-option-view">
-                            <img src="./assets/image_6487327.JPG" />
+                            <img src="./assets/rooms/food/1.jpg" />
                             <h5>Inácio's</h5>
                             <h6>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -197,7 +168,7 @@
                             </button>
                         </div>
                         <div class="commerce-option-view">
-                            <img src="./assets/image_6487327.JPG" />
+                            <img src="./assets/rooms/shoes/1.jpg" />
                             <h5>Roma</h5>
                             <h6>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -208,7 +179,7 @@
                             </button>
                         </div>
                         <div class="commerce-option-view">
-                            <img src="./assets/image_6487327.JPG" />
+                            <img src="./assets/rooms/boutique/1.jpg" />
                             <h5>Tabacaria Campinas</h5>
                             <h6>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -275,38 +246,56 @@
         <div class="modal">
             <div class="modal-body">
                 <div>
-                    <nav class="history-list"/>
-                        <img src="./assets/image_6487327.JPG"/>
-                        <img src="./assets/image_6487327.JPG"/>
-                        <img src="./assets/image_6487327.JPG"/>
+                    <nav class="history-list" id="list">
+                        <img src="./assets/about/history/1.jpg"/>
+                        <img src="./assets/about/history/2.jpg"/>
+                        <img src="./assets/about/history/3.jpg"/>
+                        <img src="./assets/about/history/4.jpg"/>
+                        <img src="./assets/about/history/5.jpg"/>
+                        <img src="./assets/about/history/6.jpg"/>
+                        <img src="./assets/about/history/7.jpg"/>
+                        <img src="./assets/about/history/8.jpg"/>
                     </nav>
-                    <nav class="construction-list">
-                        
+                    <nav class="reform-list" id="list">
+                        <img src="./assets/about/reform/1.jpg"/>
+                        <img src="./assets/about/reform/2.jpg"/>
+                        <img src="./assets/about/reform/3.jpg"/>
+                        <img src="./assets/about/reform/4.jpg"/>
+                        <img src="./assets/about/reform/5.jpg"/>
+                        <img src="./assets/about/reform/6.jpg"/>
+                        <img src="./assets/about/reform/7.jpg"/>
+                        <img src="./assets/about/reform/8.jpg"/>
                     </nav>
-                    <nav class="reform-list">
-
+                    <nav class="restaurant-list" id="list">
+                        <img src="./assets/rooms/restaurant/1.jpg"/>
+                        <img src="./assets/rooms/restaurant/2.jpg"/>
+                        <img src="./assets/rooms/restaurant/3.jpg"/>
                     </nav>
-                    <nav class="restaurant-list">
-
+                    <nav class="food-list" id="list">
+                        <img src="./assets/rooms/food/1.jpg"/>
+                        <img src="./assets/rooms/food/2.jpg"/>
+                        <img src="./assets/rooms/food/3.jpg"/>
+                        <img src="./assets/rooms/food/4.jpg"/>
                     </nav>
-                    <nav class="food-list">
-
+                    <nav class="shoes-list" id="list">
+                        <img src="./assets/rooms/shoes/1.jpg"/>
+                        <img src="./assets/rooms/shoes/2.jpg"/>
+                        <img src="./assets/rooms/shoes/3.jpg"/>
+                        <img src="./assets/rooms/shoes/4.jpg"/>
                     </nav>
-                    <nav class="shoes-list">
-
-                    </nav>
-                    <nav class="boutique-list">
-
+                    <nav class="boutique-list" id="list">
+                        <img src="./assets/rooms/boutique/1.jpg"/>
+                        <img src="./assets/rooms/boutique/2.jpg"/>
+                        <img src="./assets/rooms/boutique/3.jpg"/>
+                        <img src="./assets/rooms/boutique/4.jpg"/>
+                        <img src="./assets/rooms/boutique/5.jpg"/>
+                        <img src="./assets/rooms/boutique/6.jpg"/>
                     </nav>
                     <article>
-                        <div class="modal-img">
-                            <img src="./assets/image_6487327.JPG"/>
-                            <h5>História do Mercado</h5>
-                            <h6></h6>
-                        </div>
+                        <img id="modal-image"/>
                     </article>
                 </div>
-                <button>
+                <button id="close">
                     Voltar p/ o site
                 </button>
             </div>

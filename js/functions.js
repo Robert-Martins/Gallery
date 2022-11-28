@@ -58,10 +58,8 @@ $(document).ready(function(){
         option.addClass('selected');
         if(id === 'history')
             slider.animate({right: '0%'})
-        if(id === 'construction')
-            slider.animate({right: '100%'})
         if(id === 'reform')
-            slider.animate({right: '200%'})
+            slider.animate({right: '100%'})
     }
 
     $('.slider-toggle-container button').click(function(){
@@ -90,14 +88,59 @@ $(document).ready(function(){
     })
 
     const showModal = (list) => {
-        console.log('oioi')
         $('.modal').css('display', 'flex');
         $('body').addClass('prevent-scroll');
         $(`.${list}-list`).css('display', 'flex');
     }
 
-    $('button#shoes').click(function(){
+    const closeModal = () =>{
+        $('.modal').css('display', 'none');
+        $('body').removeClass('prevent-scroll');
+        $('.modal nav').css('display', 'none');
+    }
+
+    $('div#history').click(function(){
         showModal('history');
+        $('#modal-image').attr('src', './assets/about/history/1.jpg');
+    })
+
+    $('div#reform').click(function(){
+        showModal('reform');
+        $('#modal-image').attr('src', './assets/about/reform/1.jpg');
+    }) 
+
+    $('button#restaurant').click(function(){
+        showModal('restaurant');
+        $('#modal-image').attr('src', './assets/rooms/restaurant/1.jpg');
+    })
+
+    $('button#food').click(function(){
+        showModal('food');
+        $('#modal-image').attr('src', './assets/rooms/food/1.jpg');
+    })
+
+    $('button#shoes').click(function(){
+        showModal('shoes');
+        $('#modal-image').attr('src', './assets/rooms/shoes/1.jpg');
+    })
+
+    $('button#boutique').click(function(){
+        showModal('boutique');
+        $('#modal-image').attr('src', './assets/rooms/boutique/1.jpg');
+    })
+
+    $('.modal').on('click',function(e){
+        if(!(($(e.target).closest(".modal-body").length > 0)))
+            closeModal();
+    })
+
+    $('#close').click(function(){
+        closeModal();
+    })
+
+    $('nav#list img').click(function(){
+        var source = $(this).attr('src');
+        $('#modal-image').attr('src', source);
     })
 
 })
