@@ -3,10 +3,19 @@ $(document).ready(function(){
     
     $('html, body').fadeIn('slow');
 
-    setTimeout(function(){
+    const loadHandler = () => {
         $('.splash-screen').fadeOut('out');
         $('body').removeClass('prevent-scroll');
-    }, 5000);
+    }
+
+    var imageCounter = 0;
+
+    $('img').on('load', function(){
+        imageCounter++;
+        if(imageCounter >= 45){
+            loadHandler();
+        }
+    })
 
     const changeHeader = () => {
         $('header').addClass('alternative');
