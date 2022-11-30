@@ -463,27 +463,18 @@ footer div.body {
     align-items: center;
 }
 
-footer div.theme-quotation {
-    width: 480px;
-    height: 180px;
+footer .social-media {
+    margin-bottom: 40px;
 }
 
-footer div.theme-quotation p {
-    font-size: 16px;
-    letter-spacing: 1px;
-    line-height: 18px;
-    font-style: italic;
-    padding-left: 24px;
+footer .social-media h5, footer .social-media h6 {
+    margin-bottom: 24px;
 }
 
-footer div.theme-quotation p br {
-    content: "";
-    display: block;
-    margin: 0.5em;
-}
-
-footer div.theme-quotation span.mark {
-    font-size: 24px;
+footer .social-media img {
+    width: 32px;
+    height: 32px;
+    margin: 0 8px;
 }
 
 footer div.localization h5{
