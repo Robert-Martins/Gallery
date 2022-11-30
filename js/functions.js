@@ -1,5 +1,13 @@
 $(document).ready(function(){
+
     
+    $('html, body').fadeIn('slow');
+
+    setTimeout(function(){
+        $('.splash-screen').fadeOut('out');
+        $('body').removeClass('prevent-scroll');
+    }, 5000);
+
     const changeHeader = () => {
         $('header').addClass('alternative');
         $('header ul li button').css('color', 'black');
