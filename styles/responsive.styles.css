@@ -1,0 +1,41 @@
+@media screen and (max-width: 1360px){
+    main img {
+        width: 760px;
+        height: 540px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    main img {
+        width: 660px;
+        height: 440px;
+    }
+
+    section.about div.slider-container, section.commercies div.commercies-container {
+        width: 90%;
+    }
+
+    div.site-decoration {
+        display: none;
+    }
+
+    
+}
+
+@media screen and (max-width: 1160px) {
+
+    main img {
+        width: 600px;
+        height: 380px;
+    }
+
+}
+
+@media screen and (max-width: 1080px) {
+
+    main > img {
+        display: none;
+    }
+
+}

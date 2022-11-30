@@ -40,17 +40,6 @@ $(document).ready(function(){
             hideHeader();
     })
 
-    $('li button').click(function(){
-        var href = $(this).attr('href');
-        var home = "#home"
-        if(href == home)
-            $('html,body').animate({'scrollTop': 0});
-        else{
-            var offSetTop = $(href).offset().top;
-            $('html,body').animate({'scrollTop':offSetTop})
-        }
-    })
-
     const aboutSlider = (id) =>{
         var slider = $('.slider-exhibition-container');
         var option = $(`#${id}`);
@@ -99,12 +88,12 @@ $(document).ready(function(){
         $('.modal nav').css('display', 'none');
     }
 
-    $('div#history').click(function(){
+    $('img#history').click(function(){
         showModal('history');
         $('#modal-image').attr('src', './assets/about/history/1.jpg');
     })
 
-    $('div#reform').click(function(){
+    $('img#reform').click(function(){
         showModal('reform');
         $('#modal-image').attr('src', './assets/about/reform/1.jpg');
     }) 
@@ -141,6 +130,18 @@ $(document).ready(function(){
     $('nav#list img').click(function(){
         var source = $(this).attr('src');
         $('#modal-image').attr('src', source);
+    })
+
+    $('button#home').click(function(){
+        $('html,body').animate({'scrollTop':0})
+    })
+
+    $('button#about').click(function(){
+        $('html,body').animate({'scrollTop':700})
+    })
+
+    $('button#commercies').click(function(){
+        $('html,body').animate({'scrollTop':1240})
     })
 
 })
