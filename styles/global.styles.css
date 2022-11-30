@@ -79,6 +79,10 @@ header {
     transition: 0.4s;
 }
 
+a {
+    text-decoration: none;
+}
+
 header.alternative {
     height: 72px;
     justify-content: space-between;
@@ -588,6 +592,10 @@ footer div.disclaimer a{
     height: 480px;
     border: 1px solid black;
     padding: 1px;
+}
+
+.modal-body div article h6 {
+    display: none;
 }
 
 .modal-body > button {

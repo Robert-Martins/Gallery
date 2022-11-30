@@ -146,6 +146,18 @@ $(document).ready(function(){
 
     $('nav#list img').click(function(){
         var source = $(this).attr('src');
+        console.log(source)
+        if(source === './assets/about/history/5.jpg'){
+            $('article h6').css('display', 'none');
+            $('article h6.portrait').css('display', 'block');
+        }
+        else if(source === './assets/about/history/3.jpg'){
+            $('article h6').css('display', 'none');
+            $('article h6.museum').css('display', 'block');
+        }
+        else{
+            $('article h6').css('display', 'none');
+        }
         $('#modal-image').attr('src', source);
     })
 
