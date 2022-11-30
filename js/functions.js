@@ -12,9 +12,9 @@ $(document).ready(function(){
 
     $('img').on('load', function(){
         imageCounter++;
-        if(imageCounter >= 45){
+        $('span.imgs-loaded').text(`${imageCounter}`);
+        if(imageCounter >= 42)
             loadHandler();
-        }
     })
 
     const changeHeader = () => {

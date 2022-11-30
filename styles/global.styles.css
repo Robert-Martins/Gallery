@@ -165,8 +165,8 @@ main div.callout-container div {
 }
 
 main div.callout-container img {
-    width: 36px;
-    height: 36px;
+    width: 38px;
+    height: 38px;
     padding: 6px;
     background-color: #edeced;
     border-radius: 20px;
@@ -177,7 +177,7 @@ main div.callout-container span {
     width: 320px;
     height: 1px;
     position: absolute;
-    top: 16px;
+    top: 18px;
     background-color: black;
     z-index: 2;
 }
@@ -468,10 +468,10 @@ footer div.body {
 }
 
 footer .social-media {
-    margin-bottom: 40px;
+    margin-bottom: 64px;
 }
 
-footer .social-media h5, footer .social-media h6 {
+footer .social-media h5 {
     margin-bottom: 24px;
 }
 
